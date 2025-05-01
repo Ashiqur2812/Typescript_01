@@ -24,8 +24,9 @@
         } else {
             console.log('wrong input');
         }
-        getSpeedInMeterPerSecond(`1000 km^-1`);
     };
+
+    getSpeedInMeterPerSecond(`1000 km^-1`);
 
     // never
 
@@ -34,8 +35,6 @@
     };
 
     throwError('This is an error');
-
-
 
 
 
