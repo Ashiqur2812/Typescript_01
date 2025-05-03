@@ -41,11 +41,19 @@
         };
     };
 
-    const student1 = addCourseToStudent({ name: 'maria', email: 'maria@gmail.com', devType: 'MERN Stack Developer' });
-    console.log(student1)
+    const student1 = addCourseToStudent({
+        name: 'maria',
+        email: 'maria@gmail.com',
+        devType: 'MERN Stack Developer'
+    });
+    console.log(student1);
 
-    const student2 = addCourseToStudent({ name: 'sarah', email: 'sarah@gmail.com', hasWatch: 'apple watch' });
-    console.log(student2)
+    const student2 = addCourseToStudent({
+        name: 'sarah',
+        email: 'sarah@gmail.com',
+        hasWatch: 'apple watch'
+    });
+    console.log(student2);
 
 
 
