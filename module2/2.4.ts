@@ -65,6 +65,55 @@
     };
     console.log(richDeveloper);
 
+    interface Engineer<T, X = null> {
+        name: string,
+        email: string,
+        degree: 'cse' | 'eee' | 'cs',
+        designation: string,
+        address: {
+            presentAddress: string,
+            permanentAddress: string,
+            isMarried: boolean;
+        },
+        bike: T,
+        car?: X;
+    }
+
+    interface Data {
+        brand: string,
+        model: string,
+        isNew: boolean;
+    }
+
+    interface PoorCar {
+        name: string,
+        weight: string,
+        color: 'red' | 'white' | 'black' | 'navy';
+    }
+
+    const poorEngineer: Engineer<Data, PoorCar> = {
+        name: 'sarah',
+        email: 'sarah@gmail.com',
+        degree: "cse",
+        designation: 'Computer Engineer',
+        address: {
+            presentAddress: 'Rajshahi',
+            permanentAddress: 'Dhaka',
+            isMarried: false
+        },
+        bike: {
+            brand: 'suzuki',
+            model: 's10',
+            isNew: true
+        },
+        car: {
+            name: 'odi',
+            weight: '250kg',
+            color: "black"
+        }
+    };
+    console.log(poorEngineer)
+
 
 
 

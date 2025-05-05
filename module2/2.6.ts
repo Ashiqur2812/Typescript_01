@@ -1,7 +1,13 @@
 {
     // constraints = to force
 
-    const addCourseToStudent = <T extends { name: string, id: number, email: string; }>(student: T) => {
+    interface AddCourseToStudent {
+        name: string,
+        id: number,
+        email: string;
+    }
+
+    const addCourseToStudent = <T extends AddCourseToStudent>(student: T) => {
         const course = 'Next Level Web Development';
         return {
             ...student,
@@ -12,13 +18,15 @@
     const student3 = addCourseToStudent({ id: 44, name: 'sarah', email: 'sarah@gmail.com', isMarried: false });
     console.log(student3);
 
-
-    const student1 = addCourseToStudent<{
+    interface Student1 {
         id: number,
         name: string,
         email: string,
         devType: string;
-    }>({
+    }
+
+
+    const student1 = addCourseToStudent<Student1>({
         id: 111,
         name: 'maria',
         email: 'maria@gmail.com',
