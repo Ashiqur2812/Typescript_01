@@ -43,6 +43,37 @@
     console.log(student2);
 
 
+}
+
+{
+    interface One {
+        name: string,
+        isMarried: boolean,
+        address: string;
+    }
+
+    const addToCourseStudent = <T extends One>(student: T) => {
+        const course = 'Next Level Web Development';
+        return {
+            ...student,
+            course
+        };
+    };
+
+    const student = addToCourseStudent({
+        name: 'Stan',
+        isMarried: true,
+        address: 'Dhaka'
+    });
+    console.log(student);
+
+    const Teacher = addToCourseStudent({
+        name: 'Miller',
+        isMarried: false,
+        address: 'South Africa'
+        
+    });
+
 
 
 

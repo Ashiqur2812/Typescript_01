@@ -116,3 +116,83 @@
 
 
 }
+
+{
+    const getPromise = (): Promise<string> => {
+        return new Promise<string>((resolve, reject) => {
+            const data: string = 'sarah';
+            if (data) {
+                resolve(data);
+            } else {
+                resolve('To err is human');
+            }
+        });
+    };
+
+    const showData = async (): Promise<string> => {
+        const data: string = await getPromise();
+        return data;
+    };
+
+    interface One {
+        something: string;
+    }
+
+    const getFunction = (): Promise<One> => {
+        return new Promise<One>((resolve, reject) => {
+            const data: One = { something: 'something' };
+            if (data) {
+                resolve(data);
+            } else {
+                reject('Error is mistake');
+            }
+        });
+    };
+
+    const showFunction = async () => {
+        const data: One = await getFunction();
+        return data;
+    };
+
+    showFunction();
+
+    interface Todo { userId: number, id: number, title: string, completed: boolean; }
+
+    const getTodo = async (): Promise<Todo> => {
+        const res = await fetch('https://jsonplaceholder.typicode.com/todos/4');
+        const data = await res.json();
+        console.log('-->', data);
+        console.log('-->', data.title);
+        return data;
+    };
+
+    getTodo();
+
+}
+
+{
+    async function squareAsync(n: number): Promise<number> {
+        return new Promise((resolve, reject) => {
+            if (n < 0) {
+                reject('Negative Number not allowed');
+            } else {
+                setTimeout(() => {
+                    resolve(n * n);
+                }, 1000);
+            }
+        });
+    }
+
+    squareAsync(3).then(console.log);       // Output after 1s: 16
+    squareAsync(-3).catch(console.error);    // Output: Error: Negative number not allowed
+
+
+
+
+
+
+
+
+
+
+}

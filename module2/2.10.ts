@@ -51,6 +51,36 @@
     };
     console.log(result1);
 
+}
+
+{
+    const arrayOfNumber: number[] = [1, 3, 6];
+    // const arrayOfString:string[] = ['1','3','5']
+    const arrayOfStrings: string[] = arrayOfNumber.map(e => e.toString());
+    console.log(arrayOfStrings);
+
+    type AreaNumber = {
+        height: number;
+        width: number;
+    };
+
+    type AreaString = {
+        height: string;
+        width: string;
+    };
+
+    type String<T> = {
+        [key in keyof T]: T[key]
+    };
+
+    const area1: String<{ height: string; width: number; }> = {
+        height: '100',
+        width: 40
+    };
+
+    type Height = AreaNumber['height'];
+
+
 
 
 

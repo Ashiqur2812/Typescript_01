@@ -39,7 +39,7 @@
         designation: string;
 
         constructor(name: string, age: number, address: string, designation: string) {
-            super(name,age,address)
+            super(name, age, address);
             this.designation = designation;
         }
         // getSleep(val: number) {
@@ -54,6 +54,48 @@
     teacher.getSleep(6);
     teacher.takeClass(3);
 
+}
+
+// practice 
+
+{
+    class Person {
+        name: string;
+        age: number;
+        address: string;
+
+        constructor(name: string, age: number, address: string) {
+            this.name = name;
+            this.age = age;
+            this.address = address;
+        }
+        getSleep(numOfSleep: number) {
+            console.log(`This is ${this.name}. I am ${this.age} years old. I live in ${this.address}. I sleep ${numOfSleep} hours a day`);
+        }
+    }
+
+    class Student extends Person {
+        constructor(name: string, age: number, address: string) {
+            super(name, age, address);
+        }
+    }
+
+    const result = new Student('Pal', 23, 'Dhaka');
+    result.getSleep(5);
+
+    class Teacher extends Person {
+        designation: string;
+        constructor(name: string, age: number, address: string, designation: string) {
+            super(name, age, address);
+            this.designation = designation;
+        }
+        takeClass(numOfClass:number){
+            console.log(`I take ${numOfClass} class a day.`)
+        }
+    }
+    const res = new Teacher('Bijoy',26,'Chittagong','professor')
+    res.takeClass(4)
+    res.getSleep(3)
 
 
 

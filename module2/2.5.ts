@@ -161,10 +161,76 @@
     }
     console.log(combine('sarah', 'mafia'));
     console.log(combine(10, 20));
-    console.log(combine(true,false));
+    console.log(combine(true, false));
 
 
+}
 
+{
+    const createArray = (param: string): string[] => {
+        return [param];
+    };
+    console.log(createArray('Nigeria'));
+
+    const createArrayWithGenerics = <T>(param: T): T[] => {
+        return [param];
+    };
+    const res = createArrayWithGenerics<string>('England');
+    const res1 = createArrayWithGenerics<number>(2400);
+    console.log(res);
+    console.log(res1);
+
+    interface Student {
+        id: number,
+        name: string;
+    }
+
+    const res2 = createArrayWithGenerics<Student>({ id: 12, name: 'sarah' });
+    console.log(res2);
+
+    const createArrayWithTuples = <T, Q>(param1: T, param2: Q): [T, Q] => {
+        return [param1, param2];
+    };
+
+    const result = createArrayWithTuples<number, number>(12, 12);
+    console.log(result);
+
+    interface Three {
+        name: string,
+        age: number,
+        born: number;
+    }
+
+    const result2 = createArrayWithTuples<string, Three>('Link', { name: 'alpha', age: 33, born: 2001 });
+    console.log(result2);
+
+    interface One {
+        name: string,
+        age: number,
+        isMarried: boolean,
+        address: string;
+    }
+
+    interface Two {
+        name: string,
+        wifeName: string,
+        isChild: boolean;
+    }
+
+    const res3 = createArrayWithTuples<One, Two>(
+        {
+            name: 'sarah',
+            age: 32,
+            isMarried: true,
+            address: 'Dhaka'
+        },
+        {
+            name: 'Adam',
+            wifeName: 'Eve',
+            isChild: true
+        }
+    );
+    console.log(res3);
 
 
 

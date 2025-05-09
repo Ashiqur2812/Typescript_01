@@ -20,7 +20,7 @@
         }
 
         set deposit(amount: number) {
-             this._balance = this._balance + amount;
+            this._balance = this._balance + amount;
         }
 
         // getBalance() {
@@ -35,22 +35,8 @@
     }
 
     const poorAccount = new BankAccount(2, 'sarah', 44500);
-    poorAccount.deposit = 100
-    const myBalance = poorAccount.balance
-    console.log(myBalance)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    poorAccount.deposit = 100;
+    const myBalance = poorAccount.balance;
+    console.log(myBalance);
 
 }
