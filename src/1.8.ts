@@ -110,17 +110,4 @@
     console.log(result);
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
