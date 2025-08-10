@@ -44,4 +44,4 @@
 
 }
 
-// i am using typescript to learn making full stack project
+// i am using typescript
