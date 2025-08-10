@@ -43,3 +43,5 @@
 
 
 }
+
+// i am using typescript to learn making full stack project
