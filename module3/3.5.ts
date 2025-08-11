@@ -105,12 +105,6 @@
 
 
 
-
-
-
-
-
-
-
-
 }
+
+// this is typescript 
