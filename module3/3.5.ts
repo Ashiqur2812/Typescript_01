@@ -109,4 +109,3 @@
 
 // this is typescript 
 // practising in detail
-// learn as depth as you can
