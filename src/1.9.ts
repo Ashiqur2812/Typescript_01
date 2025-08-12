@@ -45,7 +45,6 @@
 }
 
 // this is typescript 
-// i am learning typescript 
-// this is good
+// i am learning typescript
 
 
