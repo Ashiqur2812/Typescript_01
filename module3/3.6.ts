@@ -41,4 +41,4 @@
 
 }
 
-// this is my first typescript
+// this is my first
