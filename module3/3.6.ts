@@ -40,5 +40,3 @@
     console.log(myBalance);
 
 }
-
-// this
