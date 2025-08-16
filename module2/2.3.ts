@@ -236,9 +236,6 @@
     console.log(richDeveloper);
 
 
-
-
-
-
-
 }
+
+// I am learning typescript 
