@@ -40,3 +40,5 @@
     console.log(myBalance);
 
 }
+
+// this is typescript 
