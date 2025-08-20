@@ -152,5 +152,3 @@
 
 
 }
-
-// this is typescript 
