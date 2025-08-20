@@ -151,9 +151,6 @@
     getFunction(one);
 
 
-
-
-
-
-
 }
+
+// this is typescript 
