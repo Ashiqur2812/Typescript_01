@@ -196,4 +196,3 @@
 
 }
 
-// i am learning typescript as a beginner
