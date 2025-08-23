@@ -134,19 +134,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
 
 {
@@ -209,4 +196,4 @@
 
 }
 
-// i am learning typescript 
+// i am learning typescript as a beginner
