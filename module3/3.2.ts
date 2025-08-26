@@ -99,5 +99,3 @@
 
 
 }
-
-// this is typescript 
