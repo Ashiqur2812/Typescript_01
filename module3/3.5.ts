@@ -106,5 +106,3 @@
 
 
 }
-
-// this is typescript practice 
