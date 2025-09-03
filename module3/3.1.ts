@@ -33,22 +33,8 @@
     const woman = new Person('sarah', 16, false);
 
     man.people();
-    woman.people();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    woman.people()
 
 }
+
+// this is typescript 
