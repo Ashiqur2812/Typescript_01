@@ -44,7 +44,6 @@
 
 }
 
-// i am learning typescript 
 
 
 
