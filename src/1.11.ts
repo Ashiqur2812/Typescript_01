@@ -99,5 +99,3 @@
     console.log(three);
 
 }
-
-// I am learning typescript 
