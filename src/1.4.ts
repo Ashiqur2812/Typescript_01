@@ -19,3 +19,5 @@ const numbers: [number, string, boolean] = [1, '3', true];
 
 let d: string;
 d = '123';
+
+// I am learning typescript 
