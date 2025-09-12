@@ -84,5 +84,3 @@
 
 
 }
-
-// ai am learning typescript 
