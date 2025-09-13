@@ -81,8 +81,4 @@
     unknownType(5);
     unknownType(true);
 
-
-
 }
-
-// I am learning typescript 
