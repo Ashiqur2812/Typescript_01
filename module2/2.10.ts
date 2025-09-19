@@ -81,13 +81,6 @@
     type Height = AreaNumber['height'];
 
 
-
-
-
-
-
-
-
-
-
 }
+
+// I am learning typescript 
