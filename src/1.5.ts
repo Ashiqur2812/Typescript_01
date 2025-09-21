@@ -17,3 +17,5 @@ const user : {
 }
 
 // user.company = 'PH'
+
+// I am learning typescript 
