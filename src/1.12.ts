@@ -83,6 +83,4 @@
 
 }
 
-// I am learning typescript 
-
 
