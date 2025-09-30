@@ -21,3 +21,4 @@ let d: string;
 d = '123';
 
 
+// I am learning typescript 
