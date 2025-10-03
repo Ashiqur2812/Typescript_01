@@ -197,7 +197,4 @@
 }
 
 
-// I am learning typescript 
-
-
 
