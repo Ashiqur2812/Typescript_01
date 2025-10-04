@@ -48,12 +48,6 @@
 
     const emptyObj: Record<string, unknown> = {};
 
-
-
-
-
-
-
-
-
 }
+
+// I am learning typescript 
