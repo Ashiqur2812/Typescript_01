@@ -111,5 +111,3 @@
 
 
 }
-
-// I am learning typescript 
