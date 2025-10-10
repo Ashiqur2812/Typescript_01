@@ -153,5 +153,3 @@
 
 }
 
-// I am learning typescript 
-
