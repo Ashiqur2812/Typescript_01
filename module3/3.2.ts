@@ -99,5 +99,3 @@
 
 
 }
-
-// I am learning typescript 
