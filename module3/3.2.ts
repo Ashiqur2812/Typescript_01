@@ -97,7 +97,4 @@
     res.takeClass(4)
     res.getSleep(3)
 
-
 }
-
-// I am learning typescript 
