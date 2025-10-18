@@ -82,5 +82,3 @@
 
 
 }
-
-// I am learning typescript 
