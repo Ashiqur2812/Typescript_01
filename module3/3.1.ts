@@ -37,4 +37,3 @@
 
 }
 
-// I am learning typescript 
