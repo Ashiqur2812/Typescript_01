@@ -36,5 +36,3 @@
     woman.people()
 
 }
-
-// I am learning typescript 
